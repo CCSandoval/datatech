@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DATATECH</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -12,9 +19,10 @@
         <img src="imgs/logo.webp" alt="Logo DATATECH" class="logo" />
         <nav id="nav">
           <ul class="nav-links">
-            <li><a href="#">Líneas de trabajo</a></li>
-            <li><a href="#">Investigación Formativa</a></li>
-            <li><a href="#">Semilleristas</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <!-- <li><a href="#">Investigación Formativa</a></li> -->
+            <!-- <li><a href="#">Semilleristas</a></li> -->
             <li><a href="#nosotros">Nosotros</a></li>
           </ul>
           <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -32,67 +40,72 @@
       </p>
     </section>
 
-    <section class="noticias">
+    <section class="noticias" id="noticias">
       <h2>Noticias</h2>
       <div class="noticias-grid">
-          <article class="card">
-            <img src="imgs/logo.webp" alt="RedCOLSI" />
-            <h2>
-              Participación En Fundación Red Colombiana De Semilleros de
-              Investigación RedCOLSI 2024
-            </h2>
-            <p>
-              El Encuentro Nacional e Internacional de Semilleros de Investigación
-              (ENISI 2024), organizado por la Fundación Red Colombiana de Semilleros
-              de Investigación (RedCOLSI), fue un importante espacio académico que
-              reunió a jóvenes investigadores de diferentes instituciones
-              educativas. Este evento, disponible a través de la plataforma
-              https://www.redcolsiplataforma.org/ y con más información en...
-            </p>
-          </article>
-          <article class="card">
-            <img src="imgs/logo.webp".jpg" alt="ENISI" />
-            <h2>
-              Encuentro Nacional e Internacional de Semilleros de Investigación
-            </h2>
-            <p>
-              El Encuentro Nacional e Internacional de Semilleros de Investigación
-              (ENISI 2024), organizado por la Red Colombiana de Semilleros de
-              Investigación (RedCOLSI), fue un espacio académico que reunió a
-              jóvenes investigadores de diferentes instituciones educativas. Este
-              evento busca promover la cultura investigativa entre estudiantes
-              universitarios, permitiéndoles presentar sus proyectos de
-              investigación...
-            </p>
-          </article>
-          <article class="card">
-            <img src="imgs/logo.webp".jpg" alt="Coloquio Software" />
-            <h2>Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024</h2>
-            <p>
-              El «2do. Coloquio Internacional de Investigación en Ingeniería de
-              Software» fue un evento académico celebrado el 17 de mayo de 2024 en
-              modalidad virtual. Este coloquio formó parte de las actividades
-              académicas organizadas por el Cuerpo Académico En Consolidación
-              UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
-              la...
-            </p>
-          </article>
-          <article class="card">
-            <img src="imgs/logo.webp".jpg" alt="Coloquio Software" />
-            <h2>Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024</h2>
-            <p>
-              El «2do. Coloquio Internacional de Investigación en Ingeniería de
-              Software» fue un evento académico celebrado el 17 de mayo de 2024 en
-              modalidad virtual. Este coloquio formó parte de las actividades
-              académicas organizadas por el Cuerpo Académico En Consolidación
-              UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
-              la...
-            </p>
-          </article>
+        <article class="card">
+          <img src="imgs/logo.webp" alt="RedCOLSI" />
+          <h2>
+            Participación En Fundación Red Colombiana De Semilleros de
+            Investigación RedCOLSI 2024
+          </h2>
+          <p>
+            El Encuentro Nacional e Internacional de Semilleros de Investigación
+            (ENISI 2024), organizado por la Fundación Red Colombiana de
+            Semilleros de Investigación (RedCOLSI), fue un importante espacio
+            académico que reunió a jóvenes investigadores de diferentes
+            instituciones educativas. Este evento, disponible a través de la
+            plataforma https://www.redcolsiplataforma.org/ y con más información
+            en
+          </p>
+        </article>
+        <article class="card">
+          <img src="imgs/logo.webp".jpg" alt="ENISI" />
+          <h2>
+            Encuentro Nacional e Internacional de Semilleros de Investigación
+          </h2>
+          <p>
+            El Encuentro Nacional e Internacional de Semilleros de Investigación
+            (ENISI 2024), organizado por la Red Colombiana de Semilleros de
+            Investigación (RedCOLSI), fue un espacio académico que reunió a
+            jóvenes investigadores de diferentes instituciones educativas. Este
+            evento busca promover la cultura investigativa entre estudiantes
+            universitarios, permitiéndoles presentar sus proyectos de
+            investigación
+          </p>
+        </article>
+        <article class="card">
+          <img src="imgs/logo.webp".jpg" alt="Coloquio Software" />
+          <h2>
+            Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024
+          </h2>
+          <p>
+            El «2do. Coloquio Internacional de Investigación en Ingeniería de
+            Software» fue un evento académico celebrado el 17 de mayo de 2024 en
+            modalidad virtual. Este coloquio formó parte de las actividades
+            académicas organizadas por el Cuerpo Académico En Consolidación
+            UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
+            la
+          </p>
+        </article>
+        <article class="card">
+          <img src="imgs/logo.webp".jpg" alt="Coloquio Software" />
+          <h2>
+            Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024
+          </h2>
+          <p>
+            El «2do. Coloquio Internacional de Investigación en Ingeniería de
+            Software» fue un evento académico celebrado el 17 de mayo de 2024 en
+            modalidad virtual. Este coloquio formó parte de las actividades
+            académicas organizadas por el Cuerpo Académico En Consolidación
+            UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
+            la
+          </p>
+        </article>
       </div>
     </section>
 
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
       <h2>Proyectos</h2>
       <div class="proyectos-grid">
         <div class="proyecto-card">
@@ -410,6 +423,50 @@
       <h2>Nosotros</h2>
       <div class="nosotros-grid">
         <div>
+          <h3>Misión</h3>
+          <p>
+            Fortalecer la formación académica y profesional de los estudiantes
+            de ingeniería de sistemas en la Universidad Cooperativa de Colombia
+            a través de la investigación en ciencia de datos, aprendizaje
+            automático y gestión de datos; nos comprometemos a proporcionar un
+            espacio de aprendizaje práctico donde los estudiantes puedan aplicar
+            los conocimientos adquiridos en el aula, desarrollar habilidades
+            investigativas y contribuir al avance del campo de la tecnología de
+            la información en nuestro país; trabajamos en estrecha colaboración
+            con la comunidad universitaria y el sector empresarial para ofrecer
+            oportunidades de aprendizaje significativas y preparar a nuestros
+            estudiantes para los desafíos del mundo real en el campo de la
+            ingeniería de sistemas.
+          </p>
+        </div>
+
+        <div>
+          <h3>Visión</h3>
+          <p>
+            Nos proyectamos como un referente nacional en la formación de
+            estudiantes de ingeniería de sistemas a través de la investigación
+            en ciencia de datos, aprendizaje automático y gestión de datos;
+            buscamos consolidarnos como un espacio de innovación y excelencia
+            académica, donde nuestros estudiantes adquieran las habilidades y
+            competencias necesarias para enfrentar los desafíos tecnológicos del
+            futuro; aspiramos a generar un impacto positivo en la sociedad
+            colombiana, contribuyendo al desarrollo de soluciones tecnológicas
+            avanzadas y al fortalecimiento del ecosistema de investigación en
+            tecnología de la información en el país.
+          </p>
+        </div>
+        
+        <div>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Fomentar la participación de los estudiantes de ingeniería de sistemas en proyectos de investigación en ciencia de datos, aprendizaje automático y gestión de datos.</li>
+            <li>Desarrollar habilidades investigativas y técnicas en los estudiantes, enfocadas en el análisis de datos, diseño experimental y desarrollo de modelos de aprendizaje automático.</li>
+            <li>Promover la colaboración y el intercambio de conocimientos entre estudiantes, docentes y profesionales del campo de la tecnología de la información</li>
+            <li>Contribuir al avance del conocimiento y la innovación en ciencia de datos y tecnología de la información mediante la realización de proyectos de investigación aplicada y la transferencia de conocimiento tecnológico a la sociedad.</li>
+          </ul>
+        </div>
+
+        <div>
           <h3>¿Quiénes somos?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -419,6 +476,8 @@
             vitae erat tristique accumsan.
           </p>
         </div>
+
+
         <div>
           <h3>Nuestro equipo</h3>
           <p>
@@ -426,35 +485,6 @@
             vehicula leo vitae condimentum efficitur. Donec ac justo vel ligula
             dignissim imperdiet. Aenean aliquam nunc at leo rhoncus, id iaculis
             eros condimentum. Maecenas eleifend urna eget mi dapibus tempus.
-          </p>
-        </div>
-        <div>
-          <h3>Áreas estratégicas</h3>
-          <ul>
-            <li>Formación práctica y simulación tecnológica</li>
-            <li>Investigación formativa e innovación curricular</li>
-            <li>Infraestructura tecnológica avanzada</li>
-            <li>Proyectos con impacto territorial</li>
-            <li>Alianzas y co-creación con actores del ecosistema</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Misión</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis
-            lacus ligula. Ut eu dictum ex, vel vulputate tellus. Fusce et
-            hendrerit eros. Integer sed nulla risus. Sed imperdiet purus nunc,
-            fermentum efficitur eros posuere vel.
-          </p>
-        </div>
-
-        <div>
-          <h3>Visión</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis
-            lacus ligula. Ut eu dictum ex, vel vulputate tellus. Fusce et
-            hendrerit eros. Integer sed nulla risus. Sed imperdiet purus nunc,
-            fermentum efficitur eros posuere vel.
           </p>
         </div>
 
