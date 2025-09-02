@@ -405,12 +405,6 @@ nav {
   display: block;
 }
 
-.semillerista-card h3 {
-  color: #00a5d5;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
 .semillerista-card .rol {
   font-size: 0.9rem;
   color: #666;
@@ -430,12 +424,25 @@ nav {
   margin-bottom: 60px;
 }
 
-.lider-container h3,
-.estudiantes-container h3 {
+.lider-container h2,
+.estudiantes-container h2 {
   font-size: 1.6rem;
   color: #1a1a1a;
   margin-bottom: 25px;
   text-align: center;
+}
+
+.lider-container h3,
+.estudiantes-container h3 {
+  text-align: center;
+  color: #00a5d5;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.lider-container h3 > a,
+.estudiantes-container h3 > a {
+  color: #0077b5;
 }
 
 .semillerista-card.lider {
