@@ -129,205 +129,56 @@ nav {
   margin-bottom: 15px;
 }
 
-.eventos {
+.section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
   width: 80%;
   margin: 0 auto;
   margin-top: 70px;
 }
 
-.eventos h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 70px;
-  color: #1a1a1a;
-  animation: fadeInUp 1s ease;
-}
-
-.eventos-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.evento-card {
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInCard 1s ease;
-}
-
-.evento-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.evento-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.evento-card h2 {
-  font-size: 1.3rem;
-  margin: 10px 0;
-}
-
-.evento-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.proyectos {
-  animation: fadeInUp 1s ease-in-out;
-  width: 80%;
-  margin: 70px auto;
-}
-
-.proyectos h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 70px;
-  color: #1a1a1a;
-  animation: fadeInUp 1s ease;
-}
-
-.proyectos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.proyecto-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInCard 1s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.proyecto-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.proyecto-card img {
-  width: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.proyecto-card h3 {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.proyecto-card p {
-  font-size: 0.85rem;
-  margin: 4px 0;
-  color: #444;
-}
-
-.proyecto-card a {
-  margin-top: 10px;
-  color: #0073e6;
-  text-decoration: none;
-  font-size: 0.85rem;
-}
-
-.proyecto-card .botones {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.proyecto-card button {
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #1a73e8;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.proyecto-card button:hover {
-  background-color: #0b59c4;
-}
-
-.proyecto-card button.verde {
-  background-color: #4caf50;
-}
-
-.proyecto-card button.verde:hover {
-  background-color: #3e8e41;
-}
-
-.resumen-proyecto {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  padding: 0 10px;
-  background-color: #f5f5f5;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-
-.resumen-proyecto.visible {
-  max-height: 500px; /* Ajusta según necesidad */
-  padding: 10px;
-}
-
-.nosotros {
-  width: 80%;
-  margin: 100px auto;
-  text-align: center;
-}
-
-.nosotros h2 {
+.section h2 {
   font-size: 2.2rem;
   color: #1a1a1a;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.nosotros .intro {
+.section .intro {
   font-size: 1rem;
   color: #555;
   margin-bottom: 50px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
-.nosotros-grid {
+.section-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
   gap: 30px;
+  margin: 0 auto;
 }
 
-.nosotros-card {
-  background: #fff;
+.card {
+  background-color: #fff;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.nosotros-card:hover {
+.card > img {
+  max-width: 100%;
+}
+
+.card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.nosotros-card i {
+.card > i {
   font-size: 2rem;
   color: #00a5d5;
   margin-bottom: 15px;
@@ -335,122 +186,89 @@ nav {
   text-align: center;
 }
 
-.nosotros-card h3 {
+.card h3 {
   color: #00a5d5;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.nosotros-card p,
-.nosotros-card ul {
+.card p,
+.card ul {
   font-size: 0.95rem;
   color: #444;
   line-height: 1.6;
 }
 
-.nosotros-card ul {
+.card ul {
   padding-left: 20px;
   list-style: disc;
 }
 
-.semilleristas {
-  width: 80%;
-  margin: 100px auto;
-  text-align: center;
-}
-
-.semilleristas h2 {
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 20px;
-}
-
-.semilleristas .intro {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 50px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.semilleristas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin: 0 auto;
-}
-
-@media (min-width: 1200px) {
-  .estudiantes-container .semilleristas-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.semillerista-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.semillerista-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.semillerista-card .perfil-img {
-  width: 100%;
-  max-width: 180px;
+.perfil-img {
+  width: 180px;
   border-radius: 50%;
   margin: 0 auto 20px;
   display: block;
 }
 
-.semillerista-card .rol {
+.rol {
   font-size: 0.9rem;
   color: #666;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.semillerista-card p {
+.card p {
   font-size: 0.9rem;
   color: #444;
   margin: 5px 0;
   line-height: 1.5;
 }
 
-.lider-container,
-.estudiantes-container {
-  margin-bottom: 60px;
-}
-
-.lider-container h2,
-.estudiantes-container h2 {
-  font-size: 1.6rem;
+.lider-titulo,
+.estudiantes-titulo {
+  font-size: 1.4rem;
   color: #1a1a1a;
   margin-bottom: 25px;
   text-align: center;
 }
 
-.lider-container h3,
-.estudiantes-container h3 {
+.estudiantes-titulo {
+  margin-top: 60px;
+}
+
+.semillerista-nombre {
   text-align: center;
   color: #00a5d5;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 25px;
 }
 
-.lider-container h3 > a,
-.estudiantes-container h3 > a {
-  color: #0077b5;
+.semillerista-nombre > a {
+  color: #0077b5 !important;
 }
 
-.semillerista-card.lider {
+.lider {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.evento-nombre {
+  font-size: 1.3rem !important;
+  margin: 10px 0;
+}
+
+.evento-descripcion {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.proyecto-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -464,6 +282,10 @@ footer {
 
 /* Responsive Menu */
 @media (max-width: 768px) {
+  .section-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
   .nav-links {
     display: none;
     flex-direction: column;
@@ -497,43 +319,5 @@ footer {
 
   .hamburger {
     display: block;
-  }
-
-  .eventos {
-    width: 90%;
-  }
-
-  .eventos-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-  }
-
-  .evento-card img {
-    display: block;
-    margin: auto;
-  }
-
-  .proyectos {
-    width: 90%;
-  }
-
-  .proyectos-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .proyecto-card img {
-    width: 100%;
-  }
-
-  .nosotros {
-    width: 90%;
-  }
-
-  .nosotros-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
   }
 }

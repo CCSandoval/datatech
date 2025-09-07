@@ -94,15 +94,15 @@
       </p>
     </section>
 
-    <section id="nosotros" class="nosotros">
+    <section id="nosotros" class="section">
       <h2>Nosotros</h2>
       <p class="intro">
         Somos un grupo de investigación universitario que fomenta el aprendizaje
         activo, la innovación tecnológica y la investigación aplicada.
       </p>
 
-      <div class="nosotros-grid">
-        <div class="nosotros-card">
+      <div class="section-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="card">
           <i class="fa-solid fa-bullseye"></i>
           <h3>Misión</h3>
           <p>
@@ -116,7 +116,7 @@
           </p>
         </div>
 
-        <div class="nosotros-card">
+        <div class="card">
           <i class="fa-solid fa-lightbulb"></i>
           <h3>Visión</h3>
           <p>
@@ -129,7 +129,7 @@
           </p>
         </div>
 
-        <div class="nosotros-card">
+        <div class="card">
           <i class="fa-solid fa-list-check"></i>
           <h3>Objetivos</h3>
           <ul>
@@ -152,7 +152,7 @@
           </ul>
         </div>
 
-        <div class="nosotros-card">
+        <div class="card">
           <i class="fa-solid fa-users"></i>
           <h3>¿Quiénes somos?</h3>
           <p>
@@ -164,7 +164,7 @@
           </p>
         </div>
 
-        <div class="nosotros-card">
+        <div class="card">
           <i class="fa-solid fa-people-group"></i>
           <h3>Nuestro equipo</h3>
           <p>
@@ -176,7 +176,7 @@
           </p>
         </div>
 
-        <div class="nosotros-card">
+        <div class="card">
           <i class="fa-solid fa-compass"></i>
           <h3>Principios orientadores</h3>
           <ul>
@@ -192,7 +192,7 @@
       </div>
     </section>
 
-    <section id="semilleristas" class="semilleristas">
+    <section id="semilleristas" class="section">
       <h2>Semilleristas</h2>
       <p class="intro">
         Nuestro grupo de investigación está conformado por estudiantes
@@ -201,15 +201,15 @@
       </p>
 
       <!-- Bloque profesor -->
-      <div class="lider-container">
-        <h2>Líder del Semillero</h2>
-        <div class="semillerista-card lider">
+      <div>
+        <h2 class="lider-titulo">Líder del Semillero</h2>
+        <div class="card lider">
           <img
             src="imgs/semilleristas/oscar.webp"
             alt="Profesor del grupo"
             class="perfil-img"
           />
-          <h3>
+          <h3 class="semillerista-nombre">
             Oscar Diaz
             <a
               href="https://www.linkedin.com/in/oscar-augusto-diaz-triana-18330a50/"
@@ -227,16 +227,16 @@
         </div>
       </div>
 
-      <div class="estudiantes-container">
-        <h2>Estudiantes</h2>
-        <div class="semilleristas-grid">
-          <div class="semillerista-card">
+      <div>
+        <h2 class="estudiantes-titulo">Estudiantes</h2>
+        <div class="section-grid">
+          <div class="card">
             <img
               src="imgs/semilleristas/laura.webp"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>
+            <h3 class="semillerista-nombre">
               Laura Zapata
               <a
                 href="https://www.linkedin.com/in/laura-sophia-zapata-coronado"
@@ -257,13 +257,13 @@
             </p>
           </div>
 
-          <div class="semillerista-card">
+          <div class="card">
             <img
               src="imgs/semilleristas/ana.webp"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>
+            <h3 class="semillerista-nombre">
               Ana Abril
               <a
                 href="https://www.linkedin.com/in/anamariaabrilecheverry"
@@ -286,13 +286,13 @@
             </p>
           </div>
 
-          <div class="semillerista-card">
+          <div class="card">
             <img
               src="imgs/stock-man.png"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>Eric Bermeo</h3>
+            <h3 class="semillerista-nombre">Eric Bermeo</h3>
             <p class="rol">Estudiante de Ingeniería de Sistemas</p>
             <p><strong>Progreso:</strong> 8º semestre</p>
             <p>
@@ -303,13 +303,13 @@
             </p>
           </div>
 
-          <div class="semillerista-card">
+          <div class="card">
             <img
               src="imgs/stock-man.png"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>Juan Perea</h3>
+            <h3 class="semillerista-nombre">Juan Perea</h3>
             <p class="rol">Estudiante de Ingeniería de Sistemas</p>
             <p><strong>Progreso:</strong> 7º semestre</p>
             <p>
@@ -322,13 +322,13 @@
             </p>
           </div>
 
-          <div class="semillerista-card">
+          <div class="card">
             <img
               src="imgs/stock-man.png"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>Andrés Bedoya</h3>
+            <h3 class="semillerista-nombre">Andrés Bedoya</h3>
             <p class="rol">Estudiante de Ingeniería de Sistemas</p>
             <p><strong>Progreso:</strong> 6º semestre</p>
             <p>
@@ -341,13 +341,14 @@
               herramientas de análisis de datos
             </p>
           </div>
-          <div class="semillerista-card">
+
+          <div class="card">
             <img
               src="imgs/stock-man.png"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>Valerie Rondon</h3>
+            <h3 class="semillerista-nombre">Valerie Rondon</h3>
             <p class="rol">Estudiante de Ingeniería de Sistemas</p>
             <p><strong>Progreso:</strong> 6º semestre</p>
             <p>
@@ -360,13 +361,14 @@
               señas usando RNN, MediaPipe y Visión por computadora
             </p>
           </div>
-          <div class="semillerista-card">
+
+          <div class="card">
             <img
               src="imgs/semilleristas/santiago.webp"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>
+            <h3 class="semillerista-nombre">
               Santiago Ortiz
               <a href="https://www.linkedin.com/in/santiagooc/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
@@ -383,13 +385,14 @@
               usando Deep Learning y EfficientNet
             </p>
           </div>
-          <div class="semillerista-card">
+
+          <div class="card">
             <img
               src="imgs/semilleristas/cristian.webp"
               alt="Estudiante integrante"
               class="perfil-img"
             />
-            <h3>
+            <h3 class="semillerista-nombre">
               Cristian Sandoval
               <a
                 href="https://www.linkedin.com/in/cristian-sandoval-67278017a"
@@ -414,16 +417,16 @@
       </div>
     </section>
 
-    <section class="eventos" id="eventos">
+    <section class="section" id="eventos">
       <h2>Eventos</h2>
-      <div class="eventos-grid">
-        <article class="evento-card">
+      <div class="section-grid">
+        <article class="card">
           <img src="imgs/events/RedColsi.jpg" alt="RedCOLSI" />
-          <h2>
+          <h2 class="evento-nombre">
             XXII Encuentro Departamental de Semilleros de Investigación RedCOLSI
             - Nodo Tolima
           </h2>
-          <p>
+          <p class="evento-descripcion">
             El Programa de Ingeniería de Sistemas de la Universidad Cooperativa
             de Colombia, Ibagué-Espinal se enorgullece en informar que participó
             activamente en el XXII Encuentro Departamental de Semilleros de
@@ -433,13 +436,13 @@
             superior.
           </p>
         </article>
-        <article class="evento-card">
+        <article class="card">
           <img src="imgs/events/Comfatolima.jpg" alt="Comfatolima" />
-          <h2>
+          <h2 class="evento-nombre">
             Socialización de proyectos de investigación y formación en el
             Colegio Comfatolima
           </h2>
-          <p>
+          <p class="evento-descripcion">
             En el marco del compromiso por integrar la investigación con la
             formación académica y la proyección social, desde el Línea de
             Investigación en Inteligencia Artificial, adscrita al Laboratorio de
@@ -450,10 +453,12 @@
             programa de Ingeniería de Sistemas.
           </p>
         </article>
-        <article class="evento-card">
+        <article class="card">
           <img src="imgs/events/Syscafe.jpg" alt="MaratonTI" />
-          <h2>Participación en Maratón TI Colombia de Fedesoft con Syscafe</h2>
-          <p>
+          <h2 class="evento-nombre">
+            Participación en Maratón TI Colombia de Fedesoft con Syscafe
+          </h2>
+          <p class="evento-descripcion">
             Se trata de un ejercicio académico y práctico de inmersión en el que
             participan estudiantes universitarios de programas de Ingeniería de
             Sistemas y Tecnologías de la Información. Durante esta actividad,
@@ -464,13 +469,13 @@
             demanda la industria.
           </p>
         </article>
-        <article class="evento-card">
+        <article class="card">
           <img src="imgs/events/Jornadas.jpg" alt="Jornadas" />
-          <h2>
+          <h2 class="evento-nombre">
             Jornadas Académicas de Ingeniería 2025 - Ingeniería Sostenible y
             Entornos Inteligentes
           </h2>
-          <p>
+          <p class="evento-descripcion">
             La Universidad Cooperativa de Colombia, sede Ibagué–Espinal, realizó
             con éxito las Jornadas Académicas Internacionales de Ingeniería
             2025, un espacio en el que los estudiantes compartieron sus
@@ -484,316 +489,135 @@
       </div>
     </section>
 
-    <section class="proyectos" id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="proyectos-grid">
-        <div class="proyecto-card">
-          <img src="imgs/Paves.png" alt="Proyecto Aves" />
-          <h3>
-            Desarrollo de un sistema de clasificación multiclase con redes
-            neuronales convolucionales para la identificación de aves en Ibagué:
-            fomentando la sensibilización ambiental en escuelas municipales
-          </h3>
-          <p><strong>40% ejecutado</strong></p>
-          <p><strong>ODS:</strong> Educación de calidad</p>
+    <section id="proyectos" class="section">
+      <h2>Proyectos de Investigación</h2>
+      <div class="section-grid">
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/aves.png"
+            alt="Clasificación de aves"
+          />
+          <h3>Clasificación de aves tolimenses</h3>
           <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Inteligencia artificial
+            Desarrollo de un modelo de aprendizaje profundo para identificar
+            especies de aves en el Tolima, apoyando la educación ambiental en la
+            región.
           </p>
-          <p><strong>Programas vinculados:</strong> Ingeniería de Sistemas</p>
           <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: 0</span> <br />
-            <span>Interna: $78.642.848</span>
+            <strong>Tecnologías:</strong> Redes Neuronales Convolucionales
+            (CNN), Python, TensorFlow
           </p>
-
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              El proyecto "Desarrollo de un sistema de clasificación multiclase
-              con redes neuronales convolucionales para la identificación de
-              aves en Ibagué" se orienta a la creación de una herramienta
-              tecnológica educativa que, mediante técnicas de aprendizaje
-              automático y visión por computadora, permite identificar diversas
-              especies de aves locales, promoviendo la sensibilización ambiental
-              en niños de escuelas municipales. Esta iniciativa integra a
-              estudiantes de Ingeniería de Sistemas de la Universidad
-              Cooperativa de Colombia, fomentando el aprendizaje práctico y la
-              colaboración interinstitucional, al tiempo que fortalece la
-              conexión entre tecnología y naturaleza a través de un enfoque
-              didáctico e interactivo que impulsa la conciencia ecológica desde
-              la infancia.
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573142930326','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://tolimabirdsai.streamlit.app','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
         </div>
-        <div class="proyecto-card">
-          <img src="imgs/iot.png" alt="Proyecto iot" />
-          <h3>
-            Detección y prevención de intrusos en la capa de red de Internet de
-            las cosas (IoT) con uso del aprendizaje automático y un enfoque
-            basado en anomalías.
-          </h3>
-          <p><strong>100% ejecutado</strong></p>
-          <p><strong>ODS 4:</strong> Educación de calidad</p>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/juegos.png"
+            alt="Juegos accesibles"
+          />
+          <h3>Juegos accesibles para personas con movilidad reducida</h3>
           <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Inteligencia artificial
+            Diseño de videojuegos controlados por gestos corporales con visión
+            por computadora para promover inclusión y accesibilidad en el
+            entretenimiento digital.
           </p>
           <p>
-            <strong>Programas vinculados:</strong> Ingeniería de Sistemas,
-            Medicina Veterinaria y Zootecnia
+            <strong>Tecnologías:</strong> Visión por Computadora, Python, OpenCV
           </p>
-          <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: 0</span> <br />
-            <span>Interna: $138.168.695</span>
-          </p>
-
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              Se propone el diseño de un sistema de detección y prevención de
-              intrusos en capa de red de un sistema de Internet de las cosas
-              aplicando el Aprendizaje Automático y enfoque basado en anomalías
-              con propuesta técnica de mejores métricas de rendimiento
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573176997828','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://appmodel-96ibxnudmpubnvkjcm3p3a.streamlit.app','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
         </div>
-        <div class="proyecto-card">
-          <img src="imgs/datagovernace2.png" alt="Gobierno Datos" />
-          <h3>
-            Aprovechamiento del Gobierno de Datos como apoyo al aseguramiento de
-            la calidad en el Programa de Ingeniería de Sistemas de la
-            Universidad Cooperativa de Colombia, Campus Ibagué Espinal.
-          </h3>
-          <p><strong>50% ejecutado</strong></p>
-          <p><strong>ODS 4:</strong> Educación de calidad</p>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/aves.png"
+            alt="Clasificación de aves"
+          />
+          <h3>Clasificación de aves tolimenses</h3>
           <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Ingeniería del software y desarrollo de software
+            Desarrollo de un modelo de aprendizaje profundo para identificar
+            especies de aves en el Tolima, apoyando la educación ambiental en la
+            región.
           </p>
-          <p><strong>Programas vinculados:</strong> Ingeniería de Sistemas</p>
           <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: 0</span> <br />
-            <span>Interna: $11.000.000</span>
+            <strong>Tecnologías:</strong> Redes Neuronales Convolucionales
+            (CNN), Python, TensorFlow
           </p>
-
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              El presente proyecto de investigación busca identificar la forma
-              en que el gobierno de datos puede ser utilizado para mejorar la
-              calidad de los procesos académicos y educativos del Programa de
-              Ingeniería de Sistemas de la Universidad Cooperativa de Colombia,
-              Campus Ibagué Espinal. Esta investigación abordará los principales
-              conceptos relacionados con el gobierno de datos, como la calidad
-              de los datos, la seguridad de los datos, el manejo de la
-              información, la toma de decisiones y la mejora continua.
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573142930326','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://tolimabirdsai.streamlit.app','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
         </div>
-        <div class="proyecto-card">
-          <img src="imgs/ids.png" alt="Detección de fraudes" />
-          <h3>
-            La ciberseguridad para enfrentar los fraudes empresariales con uso
-            del aprendizaje automático bajo el enfoque de detección de
-            anomalías.
-          </h3>
-          <p><strong>75% ejecutado</strong></p>
-          <p><strong>ODS 4:</strong> Educación de calidad</p>
-          <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Inteligencia artificial
-          </p>
-          <p>
-            <strong>Programas vinculados:</strong> Ingeniería de Sistemas,
-            Contaduría Pública
-          </p>
-          <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: $50.000.000</span> <br />
-            <span>Interna: $30.000.000</span>
-          </p>
 
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              Detección de anomalías en datos financieros en las organizaciones
-              de economía social a través de técnicas de aprendizaje automático.
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573176997828','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://financial-fraud.streamlit.app','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/3d.png"
+            alt="Reconstrucción 3D"
+          />
+          <h3>Reconstrucción 3D desde una sola imagen</h3>
+          <p>
+            Generación de diferentes ángulos tridimensionales a partir de una
+            imagen 2D, aplicando modelos de inteligencia artificial generativa.
+          </p>
+          <p><strong>Tecnologías:</strong> NeRFs, GANs, PyTorch</p>
         </div>
-        <div class="proyecto-card">
-          <img src="imgs/datagovernace3.png" alt="Capacitación en datos" />
-          <h3>
-            Desarrollo de habilidades en Gobierno de Datos para Estudiantes de
-            Ingeniería de Sistemas UCC - Campus Ibagué Espinal: Un enfoque
-            basado en TIC para mejorar las demandas del mercado laboral.
-          </h3>
-          <p><strong>30% ejecutado</strong></p>
-          <p><strong>ODS 4:</strong> Educación de calidad</p>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/wifi.png"
+            alt="Wi-Fi sensing"
+          />
+          <h3>Monitoreo de presencia y signos vitales</h3>
           <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Ingeniería del software y desarrollo de software
+            Uso de Wi-Fi sensing y deep learning para detectar presencia,
+            movimientos y signos vitales sin necesidad de sensores invasivos.
           </p>
-          <p><strong>Programas vinculados:</strong> Ingeniería de Sistemas</p>
           <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: 0</span> <br />
-            <span>Interna: $11.000.000</span>
+            <strong>Tecnologías:</strong> Wi-Fi Sensing, Deep Learning, Python
           </p>
-
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              El proyecto tiene como propósito fortalecer las competencias
-              prácticas y teóricas de los estudiantes en temas clave del
-              gobierno de datos, mediante el diseño e implementación de
-              estrategias formativas apoyadas en tecnologías de la información y
-              la comunicación (TIC). El enfoque propuesto articula componentes
-              de formación curricular, actividades extracurriculares y
-              escenarios de aplicación real con herramientas digitales, con el
-              fin de integrar principios, marcos de referencia y buenas
-              prácticas en gestión y gobierno de datos.
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573142930326','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://tolimabirdsai.streamlit.app','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
         </div>
-        <div class="proyecto-card">
-          <img src="imgs/iot.png" alt="Analísis financiero" />
-          <h3>
-            Detección de anomalías en datos financieros en las organizaciones de
-            economía social a través de técnicas de aprendizaje automático.
-          </h3>
-          <p><strong>75% ejecutado</strong></p>
-          <p><strong>ODS 4:</strong> Educación de calidad</p>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/senas.png"
+            alt="Lengua de señas IA"
+          />
+          <h3>Traducción automática de lengua de señas</h3>
           <p>
-            <strong>Línea de investigación:</strong> Desarrollo de software -
-            Inteligencia artificial
+            Sistema de visión por computadora para reconocer gestos y traducir
+            la lengua de señas en tiempo real a texto o voz.
+          </p>
+          <p><strong>Tecnologías:</strong> RNN, MediaPipe, Python, OpenCV</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/plagas.png"
+            alt="Detección de plagas"
+          />
+          <h3>Detección de plagas en cultivos</h3>
+          <p>
+            Aplicación de deep learning para identificar plagas agrícolas en
+            imágenes de cultivos, mejorando la productividad y reduciendo el uso
+            de pesticidas.
           </p>
           <p>
-            <strong>Programas vinculados:</strong> Ingeniería de Sistemas,
-            Contaduría Pública
+            <strong>Tecnologías:</strong> Deep Learning, EfficientNet, Python
           </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="proyecto-img"
+            src="imgs/proyectos/insectos.png"
+            alt="Clasificación de insectos"
+          />
+          <h3>Clasificación de especies de insectos</h3>
           <p>
-            <strong>Financiación:</strong> <br />
-            <span>Externa: $50.000.000</span> <br />
-            <span>Interna: $30.000.000</span>
+            Identificación de insectos mediante visión artificial para
+            contribuir a estudios ecológicos y agrícolas.
           </p>
-
-          <a href="#" class="toggle-resumen">🔹 Resumen del proyecto</a>
-
-          <div class="resumen-proyecto">
-            <p>
-              Los fraudes en datos financieros son aquellos actos en los que se
-              manipulan o falsean los datos financieros con el objetivo de
-              obtener beneficios económicos de manera ilícita. Estos fraudes
-              pueden ser cometidos por individuos, empresas o incluso por
-              gobiernos. Para prevenir y detectar fraudes en datos financieros
-              en la literatura se observa la implementación de técnicas de
-              aprendizaje automático que ayudan a través de la aplicación de
-              algoritmos minimizar los riesgos de fraude, lo cual hace atractivo
-              el tema a investigar en los diferentes escenarios empresariales.
-              Por lo tanto, esta investigación analiza como mediante la
-              detección de anomalías y técnicas de aprendizaje automático, en
-              datos financieros en las organizaciones de economía social se
-              minimizan riesgos presentes, producto de la manipulación de los
-              datos, la falsificación de operaciones, el lavado de activos,
-              entre otros. A nivel metodológico es se utiliza inicialmente al
-              mapeo documental y luego se aplica la metodología CRISP-DM que
-              abarca seis fases, cada una de las cuales representa una etapa
-              clave en el ciclo de vida de un proyecto de minería de datos.
-            </p>
-          </div>
-
-          <div class="botones">
-            <button
-              onclick="window.open('https://wa.me/573176997828','_blank')"
-            >
-              Contactar Investigador
-            </button>
-            <button
-              onclick="window.open('https://innovasicucc.wordpress.com','_blank')"
-              class="verde"
-            >
-              Ver Prototipo
-            </button>
-          </div>
+          <p><strong>Tecnologías:</strong> MobileNetV3, TensorFlow, Python</p>
         </div>
       </div>
     </section>
