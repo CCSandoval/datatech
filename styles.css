@@ -157,7 +157,7 @@ nav {
 
 .section-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin: 0 auto;
 }
@@ -282,10 +282,6 @@ footer {
 
 /* Responsive Menu */
 @media (max-width: 768px) {
-  .section-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
   .nav-links {
     display: none;
     flex-direction: column;
