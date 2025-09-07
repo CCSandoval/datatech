@@ -57,6 +57,7 @@ header {
 .logo {
   height: 60px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .logo:hover {
   transform: scale(1.05);
@@ -128,7 +129,7 @@ nav {
   margin-bottom: 15px;
 }
 
-.noticias {
+.eventos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -138,7 +139,7 @@ nav {
   margin-top: 70px;
 }
 
-.noticias h2 {
+.eventos h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 70px;
@@ -146,31 +147,36 @@ nav {
   animation: fadeInUp 1s ease;
 }
 
-.noticias-grid {
+.eventos-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.card {
+.evento-card {
   background: #f9f9f9;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInCard 1s ease;
 }
 
-.card img {
+.evento-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.evento-card img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-.card h2 {
+.evento-card h2 {
   font-size: 1.3rem;
   margin: 10px 0;
 }
 
-.card p {
+.evento-card p {
   font-size: 0.9rem;
   color: #555;
 }
@@ -208,7 +214,6 @@ nav {
 }
 
 .proyecto-card:hover {
-  transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -319,7 +324,6 @@ nav {
 }
 
 .nosotros-card:hover {
-  transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -393,7 +397,6 @@ nav {
 }
 
 .semillerista-card:hover {
-  transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -496,18 +499,17 @@ footer {
     display: block;
   }
 
-  .noticias {
+  .eventos {
     width: 90%;
   }
 
-  .noticias-grid {
+  .eventos-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
 
-  .card img {
-    max-width: 200px;
+  .evento-card img {
     display: block;
     margin: auto;
   }

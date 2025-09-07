@@ -69,12 +69,14 @@
   <body>
     <header>
       <div class="logo-menu">
-        <img src="imgs/logo.webp" alt="Logo DATATECH" class="logo" />
+        <a href="#"
+          ><img src="imgs/logo.webp" alt="Logo DATATECH" class="logo"
+        /></a>
         <nav id="nav">
           <ul class="nav-links">
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#semilleristas">Semilleristas</a></li>
-            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#eventos">Eventos</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
           </ul>
           <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -82,7 +84,7 @@
       </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="#">
       <h1>¡Bienvenidos a DATATECH!</h1>
       <p>
         DATATECH fomenta el pensamiento crítico y el trabajo en equipo para
@@ -249,7 +251,10 @@
               <strong>Certificaciones:</strong> Inteligencia artificial,
               Desarrollo web, Interfaces avanzadas, QA
             </p>
-            <p><strong>Proyecto:</strong> Clasificación de aves con CNN</p>
+            <p>
+              <strong>Proyecto:</strong> Clasificación de aves tolimenses
+              mediante redes neuronales convolucionales (CNN)
+            </p>
           </div>
 
           <div class="semillerista-card">
@@ -272,11 +277,29 @@
             <p>
               <strong>Certificaciones:</strong> Scrum foundation, Fundamentos de
               inteligencia artificial, Lógica de programación, Analítica de
-              datos con perspectiva ética, Diseño, Maquetado y Desarrollo de front end, Implementation DB No-SQL
+              datos con perspectiva ética, Diseño, Maquetado y Desarrollo de
+              front end, Implementation DB No-SQL
             </p>
             <p>
               <strong>Proyecto:</strong> Juegos para personas con movilidad
-              reducida
+              reducida mediante gestos corporales usando visión por computadora
+            </p>
+          </div>
+
+          <div class="semillerista-card">
+            <img
+              src="imgs/stock-man.png"
+              alt="Estudiante integrante"
+              class="perfil-img"
+            />
+            <h3>Eric Bermeo</h3>
+            <p class="rol">Estudiante de Ingeniería de Sistemas</p>
+            <p><strong>Progreso:</strong> 8º semestre</p>
+            <p>
+              <strong>Certificaciones:</strong>
+            </p>
+            <p>
+              <strong>Proyecto:</strong>
             </p>
           </div>
 
@@ -291,9 +314,12 @@
             <p><strong>Progreso:</strong> 7º semestre</p>
             <p>
               <strong>Certificaciones:</strong> Técnico en sistemas, Tecnólogo
-              en ADSI
+              en ADSI, Programación en python, Procesamiento de imágenes
             </p>
-            <p><strong>Proyecto:</strong> Generación de imágenes 3D</p>
+            <p>
+              <strong>Proyecto:</strong> Generación de diferentes angulos de una
+              imágen 3D a partir de una sola imágen inicial con NeRFs y GANs
+            </p>
           </div>
 
           <div class="semillerista-card">
@@ -311,10 +337,29 @@
             </p>
             <p>
               <strong>Proyecto:</strong> Monitoreo de presencia, movimiento y
-              signos vitales mediante Wi-fi sensing y Deep Learning
+              signos vitales mediante Wi-fi sensing y Deep Learning, Uso de
+              herramientas de análisis de datos
             </p>
           </div>
-
+          <div class="semillerista-card">
+            <img
+              src="imgs/stock-man.png"
+              alt="Estudiante integrante"
+              class="perfil-img"
+            />
+            <h3>Valerie Rondon</h3>
+            <p class="rol">Estudiante de Ingeniería de Sistemas</p>
+            <p><strong>Progreso:</strong> 6º semestre</p>
+            <p>
+              <strong>Certificaciones:</strong> Programación en python, Manejo
+              de librerias para visión por computadora, Procesamiento de
+              imágenes y video
+            </p>
+            <p>
+              <strong>Proyecto:</strong> Detección y traducción de lenguaje de
+              señas usando RNN, MediaPipe y Visión por computadora
+            </p>
+          </div>
           <div class="semillerista-card">
             <img
               src="imgs/semilleristas/santiago.webp"
@@ -369,66 +414,71 @@
       </div>
     </section>
 
-    <section class="noticias" id="noticias">
-      <h2>Noticias</h2>
-      <div class="noticias-grid">
-        <article class="card">
-          <img src="imgs/logo.webp" alt="RedCOLSI" />
+    <section class="eventos" id="eventos">
+      <h2>Eventos</h2>
+      <div class="eventos-grid">
+        <article class="evento-card">
+          <img src="imgs/events/RedColsi.jpg" alt="RedCOLSI" />
           <h2>
-            Participación En Fundación Red Colombiana De Semilleros de
-            Investigación RedCOLSI 2024
+            XXII Encuentro Departamental de Semilleros de Investigación RedCOLSI
+            - Nodo Tolima
           </h2>
           <p>
-            El Encuentro Nacional e Internacional de Semilleros de Investigación
-            (ENISI 2024), organizado por la Fundación Red Colombiana de
-            Semilleros de Investigación (RedCOLSI), fue un importante espacio
-            académico que reunió a jóvenes investigadores de diferentes
-            instituciones educativas. Este evento, disponible a través de la
-            plataforma https://www.redcolsiplataforma.org/ y con más información
-            en
+            El Programa de Ingeniería de Sistemas de la Universidad Cooperativa
+            de Colombia, Ibagué-Espinal se enorgullece en informar que participó
+            activamente en el XXII Encuentro Departamental de Semilleros de
+            Investigación – Nodo Tolima, un espacio académico promovido por la
+            red RedCOLSI que fortalece la cultura investigativa en el país y
+            estimula la formación temprana de investigadores desde la educación
+            superior.
           </p>
         </article>
-        <article class="card">
-          <img src="imgs/logo.webp" alt="ENISI" />
+        <article class="evento-card">
+          <img src="imgs/events/Comfatolima.jpg" alt="Comfatolima" />
           <h2>
-            Encuentro Nacional e Internacional de Semilleros de Investigación
+            Socialización de proyectos de investigación y formación en el
+            Colegio Comfatolima
           </h2>
           <p>
-            El Encuentro Nacional e Internacional de Semilleros de Investigación
-            (ENISI 2024), organizado por la Red Colombiana de Semilleros de
-            Investigación (RedCOLSI), fue un espacio académico que reunió a
-            jóvenes investigadores de diferentes instituciones educativas. Este
-            evento busca promover la cultura investigativa entre estudiantes
-            universitarios, permitiéndoles presentar sus proyectos de
-            investigación
+            En el marco del compromiso por integrar la investigación con la
+            formación académica y la proyección social, desde el Línea de
+            Investigación en Inteligencia Artificial, adscrita al Laboratorio de
+            Tecnologías Emergentes, realizamos una jornada de socialización de
+            proyectos en el Colegio Comfatolima Ana Julia Suárez de Zorroza,
+            donde nuestros estudiantes tuvieron la oportunidad de compartir
+            avances significativos derivados de algunos de los cursos del
+            programa de Ingeniería de Sistemas.
           </p>
         </article>
-        <article class="card">
-          <img src="imgs/logo.webp" alt="Coloquio Software" />
-          <h2>
-            Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024
-          </h2>
+        <article class="evento-card">
+          <img src="imgs/events/Syscafe.jpg" alt="MaratonTI" />
+          <h2>Participación en Maratón TI Colombia de Fedesoft con Syscafe</h2>
           <p>
-            El «2do. Coloquio Internacional de Investigación en Ingeniería de
-            Software» fue un evento académico celebrado el 17 de mayo de 2024 en
-            modalidad virtual. Este coloquio formó parte de las actividades
-            académicas organizadas por el Cuerpo Académico En Consolidación
-            UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
-            la
+            Se trata de un ejercicio académico y práctico de inmersión en el que
+            participan estudiantes universitarios de programas de Ingeniería de
+            Sistemas y Tecnologías de la Información. Durante esta actividad,
+            los jóvenes tienen la oportunidad de visitar empresas del sector TI
+            y conocer de primera mano sus dinámicas, procesos y retos actuales.
+            La experiencia busca acercarlos al mundo laboral, brindándoles una
+            perspectiva más clara sobre las competencias y habilidades que
+            demanda la industria.
           </p>
         </article>
-        <article class="card">
-          <img src="imgs/logo.webp" alt="Coloquio Software" />
+        <article class="evento-card">
+          <img src="imgs/events/Jornadas.jpg" alt="Jornadas" />
           <h2>
-            Segundo Coloquio Internacional de ING.SOFTWARE VERACRUZANA 2024
+            Jornadas Académicas de Ingeniería 2025 - Ingeniería Sostenible y
+            Entornos Inteligentes
           </h2>
           <p>
-            El «2do. Coloquio Internacional de Investigación en Ingeniería de
-            Software» fue un evento académico celebrado el 17 de mayo de 2024 en
-            modalidad virtual. Este coloquio formó parte de las actividades
-            académicas organizadas por el Cuerpo Académico En Consolidación
-            UV-CAEC-535 «Aplicación y Enseñanza de la Ingeniería de Software» de
-            la
+            La Universidad Cooperativa de Colombia, sede Ibagué–Espinal, realizó
+            con éxito las Jornadas Académicas Internacionales de Ingeniería
+            2025, un espacio en el que los estudiantes compartieron sus
+            proyectos de investigación a través de exposiciones de póster. La
+            actividad permitió visibilizar temáticas innovadoras relacionadas
+            con ingeniería sostenible y entornos inteligentes, fortaleciendo las
+            habilidades prácticas, el pensamiento crítico y la capacidad de
+            comunicación de los participantes.
           </p>
         </article>
       </div>
