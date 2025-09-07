@@ -133,7 +133,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   margin-top: 70px;
 }
@@ -159,7 +159,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  margin: 0 auto;
 }
 
 .card {
